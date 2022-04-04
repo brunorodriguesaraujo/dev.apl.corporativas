@@ -11,11 +11,11 @@ abstract class DataMiner {
         closeFile(file)
     }
 
-    private fun closeFile(file: Any) {}
     private fun analyzeData(data: Any) {}
     private fun sendReport(analysis: Any) {}
-    private fun openFile(path: Any) {}
 
+    abstract fun openFile(path: Any)
     abstract fun extractDocData(file: Any)
     abstract fun parseDocData(rawData: Any)
+    abstract fun closeFile(file: Any)
 }
